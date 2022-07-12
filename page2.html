@@ -1,0 +1,492 @@
+<!DOCTYPE html> <!-- Сайт пятого поколения -->
+<html>
+   <head>
+
+<!-- Закомментировали кусок кода
+    <title> Сайт о радиотехнике </title>
+  <style>
+   h1 {
+    color: rgb(50,100,255);
+    font-family: Arial;
+    font-size: 100px;
+    text-align: center;
+   }
+   h2 {
+    color: rgb(5,5,5);
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+   }
+   p {
+    color: rgb(5,5,5);
+    font-size: 50px;
+    width: 60%;
+   }
+
+  </style>
+
+-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РТ</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <!-- KaTeX -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
+        integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
+        crossorigin="anonymous">
+    <script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"
+        integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp"
+        crossorigin="anonymous"></script>
+    <script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
+        integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },
+                    { left: '\\[', right: '\\]', display: true }
+                ],
+                // • rendering keys, e.g.:
+                throwOnError: false
+            });
+        });
+    </script>
+
+</head>
+
+
+<a href="index.html">Главная</a>
+    <h1>$ \TeX $ Примеры</h1>
+
+    <h2>Basic Syntax</h2>
+
+    <ul>
+        <li>
+            <p>Text Mode vs. Math Mode</p>
+        </li>
+
+        <li>
+            <p>$$ for Inline (aka Mathematics Mode)</p>
+        </li>
+
+        <li>
+            <p>Inline vs. Display</p>
+        </li>
+
+        <li>
+            <p>$$$$ for Display (aka Display Mathematics)</p>
+        </li>
+
+        <li>
+            <p>\ for symbols and functions</p>
+        </li>
+
+        <li>
+            <p>{} used with functions</p>
+        </li>
+
+        <li>
+            <p>whitespace is ignored (for the most part)</p>
+        </li>
+    </ul>
+
+    <p>This is Text Mode.</p>
+
+    <p>$ This is what characters look like inside Math Mode. $</p>
+
+    <p>$ \text{This is how to display text inside Math Mode.} $</p>
+
+    <p>$$ \text{Display Mode is Centered on a separate line.} $$</p>
+
+
+
+
+    <p>Text Mode: 1 + 1 = 2</p>
+
+    <p>Math Mode Inline: $ 1 + 1 = 2 $</p>
+
+    <p>Math Mode Display: $$ 1 + 1 = 2 $$</p>
+
+    $$1+1=2$$
+
+    $$ 2 - 3 = -1 $$
+
+    $$ 2 x 3 = 6 $$
+
+    $$ 2 \times 3 = 6 $$
+
+    $$ 5 / 2 = 2.5 $$
+
+    $$ 5 \div 2 = 2.5 $$
+
+    $$ \frac{1}{2} = 0.5 $$
+
+    $$ \frac{3}{4} = 0.75 $$
+
+    $$ 2^3 = 8 $$
+
+    $$ \sqrt{4} = 2 $$
+
+    $$ \sqrt[3]{8} = 2 $$
+
+    $$ t_0 $$
+
+    $$ $100 $$
+
+    $$ \$100 $$
+
+    $$ 100% $$
+
+    $$ 100\% $$
+
+    $$
+    % this is a comment that will not render
+    this is text \\ % this is how to add a new line
+    \text{this is also text}
+    $$
+
+    <h2>Алгебра</h2>
+
+    $$ x + 2 = 5 $$
+
+    $$ x = 5 - 2 $$
+
+    $$ x = 3 $$
+
+    $$
+    x + 2 = 5 \\
+    x = 5 - 2 \\
+    x = 3
+    $$
+
+    $$ ax^2 + bx + c = 0 $$
+
+    $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+    <h2>Геометрия</h2>
+
+    $$ a^2 + b^2 = c^2 $$
+
+    $$ A = \pi r^2 $$
+
+    $$ 30\degree + 60\degree + 90\degree = 180\degree $$
+
+    <h2>Тригонометрия</h2>
+
+    $$ \sin A = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{a}{c} $$
+
+    $$ \cos A = \frac{\text{adjacent}}{\text{hypotenuse}} = \frac{b}{c} $$
+
+    $$ \tan A = \frac{\text{opposite}}{\text{adjacent}} = \frac{a}{b} =
+    \frac{a/c}{b/c} = \frac{\sin A}{\cos A} $$
+
+    <h2>Calculus</h2>
+
+    $$ \lim_{h \rarr 0} \frac{f(a + h) - f(a)}{h} $$
+
+    $$
+    y = x^2 \\
+    \frac{dy}{dx} = 2x
+    $$
+
+    $$ \int_a^b f(x)dx = F(b) - F(a) $$
+
+    $$ \frac{d}{dx} \int_a^x f(t)dt = f(x) $$
+
+    <h2>Физика</h2>
+
+    $$ \sum \bold{F} = 0 \Leftrightarrow \frac{\text{d}\bold{v}}{\text{d}t} = 0
+    $$
+
+    $$ \bold{F} = m\bold{a} $$
+
+    $$ \bold{F}_\textit{\textsf{A}} = \bold{-F}_\textit{\textsf{B}} $$
+
+    <h2>Statistics</h2>
+
+    $$ \bar{x} = \frac{1}{n} \Bigg(\sum_{i=1}^n x_i \Bigg) = \frac{x_1 + x_2 +
+    \cdots + x_n}{n} $$
+
+    $$ s = \sqrt{\frac{1}{N - 1} \sum_{i=1}^N (x_i - \bar{x})^2} $$
+
+    <h2>Линейная алгебра</h2>
+
+    $$
+    \begin{bmatrix}
+    a_1 \\
+    \vdots \\
+    a_m
+    \end{bmatrix}
+    $$
+
+    $$
+    \begin{bmatrix}
+    a_{1,1} & \cdots & a_{1,n} \\
+    \vdots & \ddots & \vdots \\
+    a_{m,1} & \cdots & a_{m,n}
+    \end{bmatrix}
+    $$
+
+    $$
+    \begin{alignedat}{3}
+    2&x + y \space- &z &= &8 \\
+    -3&x -y + 2&z &= \space&-11 \\
+    -2&x + y + 2&z &= &-3
+    \end{alignedat}
+    $$
+
+    $$
+    M =
+    \begin{bmatrix}
+    \begin{aligned}
+    &2 & &1 & -&1\space \\
+    \space-&3 & -&1 & &2 \\
+    -&2 & &1 & &2
+    \end{aligned}
+    \end{bmatrix}
+    $$
+
+    <h2>Другое</h2>
+
+    $$ \infty $$
+
+    $$
+    \alpha \beta \gamma \delta \\
+    \epsilon \theta \iota \mu \\
+    \sigma \phi \varphi \omega
+    $$
+
+    $$
+    \TeX \\
+    \xcancel{\LaTeX} \\
+    \KaTeX
+    $$
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Здесь приводятся основы электроники!
+<br> <!-- Это перенос на новую строку -->
+<a href="http://nsk.swl.su:8073/">Радиоприёмник в посёлке Лихановский</a>
+
+<br> 
+<!-- Плагин радиоприёмника: -->
+<div id="radiobells_container">
+<a href="https://www.radiobells.com/" rel="nofollow" id="RP_link">Онлайн радио</a> 
+#radiobells_script_hash</div>
+<link href="https://www.radiobells.com/script/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">var rad_backcolor="#434242";
+var rad_logo = "black"; var rad_autoplay = true; var rad_width = "fixed";
+var rad_width_px = 330;
+var rad_stations =
+                   [['https://nashe1.hostingradio.ru/nashe-256','Наше радио','nashe'],
+                    ['https://pub0101.101.ru/stream/air/aac/64/100','Авторадио','avtoradio'],
+                    ['https://pub0202.101.ru:8443/stream/air/aac/64/99','Радио Energy','nrj'],
+                    ['https://chanson.hostingradio.ru:8041/chanson256.mp3','Радио Шансон','chanson'],
+                    ['https://icecast-vgtrk.cdnvideo.ru/vestifm_mp3_192kbps','Вести FM','vestifm'],
+                    ['https://rusradio.hostingradio.ru/rusradio96.aacp','Русское радио','russradio'],
+                    ['https://icecast-vgtrk.cdnvideo.ru/mayakfm_mp3_128kbps','Радио Маяк','mayak'],
+                    ['https://dfm.hostingradio.ru/dfm96.aacp','DFM','dfm'],
+                    ['https://bfm.hostingradio.ru:8004/fm','Бизнес FM','businessfm'],
+                    ['https://chanson.hostingradio.ru:8041/chanson-romantic256.mp3','Радио Шансон: Романтический','chansonromantic'],
+                    ['https://icecast-mirtv.cdnvideo.ru/radio_mir128','Радио МИР','radiomir']];
+</script>
+<script type="text/javascript" src="https://www.radiobells.com/script/v2_1.js" charset="UTF-8">
+</script>
+<!-- Плагин радиоприёмника. Конец. -->
+
+<!-- Радио на карте мира: -->
+<a href="http://radio.garden/listen/uniton-fm/6GjBPRd3">Радио на карте мира</a> 
+
+<!-- Радио на карте мира. Конец -->
+
+
+
+<!-- Синусоида бегущая: -->
+<script type="text/javascript">
+        function showAxes(ctx,axes) {
+            var width = ctx.canvas.width;
+            var height = ctx.canvas.height;
+            var xMin = 0;
+            
+            ctx.beginPath();
+            ctx.strokeStyle = "rgb(128,128,128)";
+            
+            // X-Axis
+            ctx.moveTo(xMin, height/2);
+            ctx.lineTo(width, height/2);
+            
+            // Y-Axis
+            ctx.moveTo(width/2, 0);
+            ctx.lineTo(width/2, height);
+
+            // Starting line
+            ctx.moveTo(0, 0);
+            ctx.lineTo(0, height);
+            
+            ctx.stroke();
+        }
+        function drawPoint(ctx, y) {            
+            var radius = 3;
+            ctx.beginPath();
+
+            // Hold x constant at 4 so the point only moves up and down.
+            ctx.arc(4, y, radius, 0, 2 * Math.PI, false);
+
+            ctx.fillStyle = 'red';
+            ctx.fill();
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+        function plotSine(ctx, xOffset, yOffset) {
+            var width = ctx.canvas.width;
+            var height = ctx.canvas.height;
+            var scale = 20;
+
+            ctx.beginPath();
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = "rgb(66,44,255)";
+
+            // console.log("Drawing point...");
+            // drawPoint(ctx, yOffset+step);
+            
+            var x = 4;
+            var y = 0;
+            var amplitude = 40;
+            var frequency = 40;
+            //ctx.moveTo(x, y);
+            ctx.moveTo(x, 50);
+            while (x < width) {
+                y = height/2 + amplitude * Math.sin((x+xOffset)/frequency);
+                ctx.lineTo(x, y);
+                x++;
+                // console.log("x="+x+" y="+y);
+            }
+            ctx.stroke();
+            ctx.save();
+
+            console.log("Drawing point at y=" + y);
+            drawPoint(ctx, y);
+            ctx.stroke();
+            ctx.restore();
+        }
+        function draw() {
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext("2d");
+
+            context.clearRect(0, 0, 500, 500);
+            showAxes(context);
+            context.save();            
+            
+            plotSine(context, step, 50);
+            context.restore();
+            
+            step += 4;
+            window.requestAnimationFrame(draw);
+        }
+        function spirograph() {            
+            var canvas2 = document.getElementById("canvas2");
+            var context = canvas2.getContext("2d");
+            
+            showAxes(context);
+            context.save();
+            // var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+            var step = 4;
+            for (var i = -4; i < canvas.height; i += step) {
+                // context.putImageData(imageData, 0, 0);
+                plotSine(context, i, 54 + i);
+            }
+        }
+        function init() {
+            window.requestAnimationFrame(draw);
+            spirograph();
+        }
+        var step = -4;
+    </script>
+</head>
+
+<body onload="init()">
+    <canvas id="canvas" width="500" height="100"></canvas>
+    <p/>
+</body>
+<!-- Синусоида бегущая. Конец: -->
+
+
+
+<!-- График Латех: -->
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Btikzpicture%7D%5Bscale%3D1.0544%5D%5Csmall%0A%5Cbegin%7Baxis%7D%5Baxis%20line%20style%3Dgray%2C%0A%09samples%3D120%2C%0A%09width%3D9.0cm%2Cheight%3D6.4cm%2C%0A%09xmin%3D-1.5%2C%20xmax%3D1.5%2C%0A%09ymin%3D0%2C%20ymax%3D1.8%2C%0A%09restrict%20y%20to%20domain%3D-0.2%3A2%2C%0A%09ytick%3D%7B1%7D%2C%0A%09xtick%3D%7B-1%2C1%7D%2C%0A%09axis%20equal%2C%0A%09axis%20x%20line%3Dcenter%2C%0A%09axis%20y%20line%3Dcenter%2C%0A%09xlabel%3D%24x%24%2Cylabel%3D%24y%24%5D%0A%5Caddplot%5Bred%2Cdomain%3D-2%3A1%2Csemithick%5D%7Bexp(x)%7D%3B%0A%5Caddplot%5Bblack%5D%7Bx%2B1%7D%3B%0A%5Caddplot%5B%5D%20coordinates%20%7B(1%2C1.5)%7D%20node%7B%24y%3Dx%2B1%24%7D%3B%0A%5Caddplot%5Bred%5D%20coordinates%20%7B(-1%2C0.6)%7D%20node%7B%24y%3De%5Ex%24%7D%3B%0A%5Cpath%20(axis%20cs%3A0%2C0)%20node%20%5Banchor%3Dnorth%20west%2Cyshift%3D-0.07cm%5D%20%7B0%7D%3B%0A%5Cend%7Baxis%7D%0A%5Cend%7Btikzpicture%7D" alt="\begin{tikzpicture}[scale=1.0544]\small
+\begin{axis}[axis line style=gray,
+	samples=120,
+	width=9.0cm,height=6.4cm,
+	xmin=-1.5, xmax=1.5,
+	ymin=0, ymax=1.8,
+	restrict y to domain=-0.2:2,
+	ytick={1},
+	xtick={-1,1},
+	axis equal,
+	axis x line=center,
+	axis y line=center,
+	xlabel=$x$,ylabel=$y$]
+\addplot[red,domain=-2:1,semithick]{exp(x)};
+\addplot[black]{x+1};
+\addplot[] coordinates {(1,1.5)} node{$y=x+1$};
+\addplot[red] coordinates {(-1,0.6)} node{$y=e^x$};
+\path (axis cs:0,0) node [anchor=north west,yshift=-0.07cm] {0};
+\end{axis}
+\end{tikzpicture}" /></p>
+<!-- График Латех. Конец -->
+
+
+<!-- Температура с ардуино: -->
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1601560/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature+%28%C2%B0C%29&type=line&xaxis=Time&yaxis=Water+Temperature+%28%C2%B0C%29"><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1601560/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature+%28%C2%B0C%29&type=line&xaxis=Time&yaxis=Water+Temperature+%28%C2%B0C%29"></iframe>
+<!-- Температура с ардуино. Конец -->
